@@ -1,0 +1,75 @@
+﻿<Window x:Class="PolicyService_v._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RGS_VZR" Height="950" Width="1050" Background="#FFF3F3F3" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="350"></ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="350"></ColumnDefinition>
+            <ColumnDefinition Width="Auto" MinWidth="350"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61" MinHeight="37"></RowDefinition>
+            <RowDefinition Height="55" MinHeight="55"></RowDefinition>
+            <RowDefinition Height="55" MinHeight="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="55"></RowDefinition>
+            <RowDefinition Height="350"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Name="name" ToolTip="Фамилия Имя Застрахованного"  Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" SelectionBrush="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Background="White"/>
+        <TextBox Name="nameBefore" ToolTip="Фамилия и Имя после изменения" Grid.Row="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="birthDate" ToolTip="Дата рождения" Grid.Row="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="productID" ToolTip="Идентификатор продукта" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="serialBefore" ToolTip="Серия полиса после изменения" Grid.Row="3" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="number"  Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="24,5,39,5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" />
+        <TextBox Name="vipVerification" ToolTip="Результат проверки" Grid.Row="6"  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="vipAdd" ToolTip="Результат добавления" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="vipDelete" ToolTip="Результат удаления" Grid.Row="8" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="insuredDelete" ToolTip="Результат удаления" Grid.Row="9" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="nameAfter" ToolTip="Фамилия Имя Застрахованного"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" SelectionBrush="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" Background="White"/>
+        <TextBox Name="birthDateAfter" ToolTip="Дата рождения после изменения" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="serialAfetr" ToolTip="Серия полиса после изменения" Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="parentProductName" ToolTip="Название ближайшего родительского продукта в иерархии" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="personToDelete" ToolTip="Название ближайшего родительского продукта в иерархии" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+        <TextBox Name="insuredAdd" ToolTip="Результат удаления" Grid.Row="10" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" Margin="5" Padding="2" Text="" SpellCheck.IsEnabled="True" BorderThickness="3" ></TextBox>
+
+
+        <Label Content="Фамилия и имя Застрахованного" Grid.Row="0" VerticalAlignment="Bottom" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="6,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" RenderTransformOrigin="0.584,-1.268" Height="31" Width="177" FontSize="10" Foreground="#FF1B11E0"/>
+        <Label Content="Фамилия и Имя после изменения" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="156" Foreground="#FF1B11E0"></Label>
+        <Label Content="Дата рождения до изменения(гг-мм-дд)" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="194" Foreground="#FF1B11E0"></Label>
+        <Label Content="Серия полиса до изменения" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="156" Foreground="#FF1B11E0"></Label>
+        <Label Content="Номер полиса " Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="30,0,0,10" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="26" Width="111" Foreground="#FF1B11E0" RenderTransformOrigin="0.097,0.457"></Label>
+        <Label Content="ID продукта" Grid.Row="5" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="252" Foreground="#FF1B11E0"></Label>
+        <Label Content="Фамилия и Имя до изменения" Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="156" Foreground="#FF1B11E0"></Label>
+        <Label Content="Дата рождения после изменения(гг-мм-дд)" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="180" Foreground="#FF1B11E0"></Label>
+        <Label Content="Серия полиса после изменения" Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="156" Foreground="#FF1B11E0"></Label>
+        <Label Content="Название ближайшего родительского продукта в иерархии" Grid.Row="5" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="252" Foreground="#FF1B11E0"></Label>
+        <Label Content="Фамилия и имя Застрахованного" Grid.Row="4" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5,0,0,5" MaxHeight="20"  FontFamily="Arial Narrow" FontSize="10" Height="20" Width="252" Foreground="#FF1B11E0"></Label>
+
+
+
+        <Button Name="btn1" ToolTip="" Content="Изменить Фамилию, Имя Застрахованного"  Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_NameChanging" Width="287" BorderThickness="3"/>
+        <Button Name="btn2" ToolTip="" Content="Изменить Дату Рождения" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_BirthDateChanging" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn3" ToolTip="" Content="Изменить Серию Полиса" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_SerialChanging" Width="287" BorderThickness="3"/>
+        <Button Name="btn5" ToolTip="" Content="Получить название Родительского продукта" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_ParentIDReceiving" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn6" ToolTip="" Content="Проверка на нахождение в БД Вип" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_VipVerification" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn7" ToolTip="" Content="Добавить в БД Вип" Grid.Column="2" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_VipDBAdd" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn8" ToolTip="" Content="Удалить из БД Вип" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_VipBDDelete" Width="287" BorderThickness="3"/>
+        <Button Name="btn9" ToolTip="" Content="Удалить из списка Застрахованных" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_FromInsuredListDelete" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn10" ToolTip="" Content="Удалить признак ВИП из тела полиса" Grid.Column="2" Grid.Row="9" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_VIPPropertyDelete" Width="287" BorderThickness="3"></Button>
+        <Button Name="btn11" ToolTip="" Content="Добавить признак ВИП в тело полиса" Grid.Column="2" Grid.Row="10" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="24,10,0,10" FontFamily="Arial Narrow" Height="35" FontSize="14" Click="On_VIPPropertyAdd" Width="287" BorderThickness="3"></Button>
+
+
+        <TextBox Name="InfoBox" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3" Margin="5,0,25,42" MinWidth="50" MinHeight="100" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible" Padding="2" FontFamily="Arial Narrow" FontSize="14" />
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PolicyService_v._1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RootParty" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1e174f55-b9c2-484b-9da5-9ea374318b2a</Value>
+    </Setting>
+    <Setting Name="ConnectionSetting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=192.168.11.7,1433; Network Library=DBMSSOCN; Initial Catalog=insurance;User ID=security_administrator;Password=security_administrator;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
